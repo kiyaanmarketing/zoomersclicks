@@ -430,6 +430,32 @@ app.get("/clear-session", (req, res) => {
 
 // Endpoint to track users and return the affiliate URL
 
+app.post('/api/retrack', async (req, res) => {
+  const { url, referrer, unique_id, origin } = req.body;
+
+  if (!url || !unique_id) {
+    return res.status(400).json({ success: false, error: 'Invalid request data' });
+  }
+
+  try {
+    const allowed = await canTrackToday(origin, 2000);
+    if (!allowed) {
+      return res.json({ success: false, blocked: true, reason: "DAILY_LIMIT_REACHED" });
+    }
+
+    const affiliateUrl = await getAffiliateUrlByHostNameFindActive(origin, 'HostNameN');
+
+    if (!affiliateUrl) {
+      return res.json({ success: false, reason: "affiliate_url not found" });
+    }
+
+    res.json({ success: true, affiliate_url: affiliateUrl });
+  } catch (error) {
+    console.error("Retrack API error:", error.message);
+    res.status(500).json({ success: false });
+  }
+});
+
 app.post('/api/track-user', async (req, res) => {
   const { url, referrer, unique_id, origin } = req.body;
   console.log("Request Data:", req.body);
